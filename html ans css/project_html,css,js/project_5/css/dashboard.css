@@ -1,0 +1,316 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#0B1426;
+}
+/* Navbar */
+.navbar{
+    height:50px; 
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.navbar .logo-section img{
+    height:50px;
+    width:50px;
+    gap:10px;
+    left:300px;
+    position:absolute;
+}
+.logo-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:inline-flex;
+}
+.overlay{
+    height: 1px;
+    background-color:#6f747e;
+    opacity:.5;
+    
+}
+.history-icon{
+    position:absolute;
+    left:63.5%;
+    opacity:.5;
+    margin-left:0;
+}
+.logout-div{
+    position:absolute;
+    margin-left:50px;
+}
+.history-link:hover{
+    color:white;
+}
+ .navbar .logout-div {
+     position: absolute;
+    color: red;
+    left: 70%;
+    cursor: pointer;
+    z-index: 100
+    
+}
+
+.logo-section span{
+    position:absolute;
+    left:350px;
+}
+.logo-section a{
+    position:absolute;
+    left:900px;
+    text-decoration:none;
+    color:white;
+    opacity:.5;
+}
+.navbar a:hover {
+    color:white;
+    opacity:1;
+}
+#history-icon:hover{
+    color:white;
+}
+/* Main container */
+.trip-planner-container{
+    height:200px;
+    width:700px;
+    background-color:#232E42;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    margin-top:10px;
+    left:25%;
+    top:13%;
+    border-radius:15px;
+    gap:5px;
+}
+.trip-planner-container p {
+    top:10%;
+    position:absolute;
+    color:white;
+    font-weight:bold;
+    font-size:25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+.trip-planner-container h4{
+    color:white;
+    opacity:.5;
+    font-size:15px;
+    font-family:arial;
+    position:absolute;
+    top:30%;
+}
+input{
+    opacity:.8;
+}
+/* Pick-up location */
+.pickup-location-section label{
+    color:white;
+    opacity:.5;
+}
+/* Destination */
+.destination-section label{
+    color:white;
+    opacity:.5;
+}
+.trip-planner-container input{
+    margin-top:5px;
+    padding:5px;
+    border-radius:5px;
+ 
+}
+.trip-planner-container i {
+    margin-top:40px;
+}
+.date-wrapper input i{
+    color:white;
+}
+/* Start date */
+.start-date-section label{
+    color:white;
+    opacity:.5;
+}
+/* End date */
+.end-date-section label{
+    color:white;
+    opacity:.5;
+}
+
+/*journey-section*/
+.journey-section{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    left:39%;
+    top:55%;
+    background-color:#F47317;
+    padding:10px;
+    border-radius:10px;
+    width:400px;
+}
+.journey-section{
+       justify-content:center;
+    align-items:center;
+}
+.jr-btn{
+   display: block;          /* 🔥 full area নেবে */
+    width: 100%;             /* parent div পুরোটা */
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #F47317;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align:center;
+    
+}
+/*filter-bar*/
+.filter-bar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    top:70%;
+    left:25%;
+    font-size:10px;
+   
+}
+.filter-bar label {
+    color:white;
+  
+}
+.filter-bar i{
+    color:white;
+    opacity:.7;
+}
+.seats-bar{
+    margin-left:20px;
+}
+.max-price {
+    margin-left:8px;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+      margin-left:20px;
+}
+.max-price span{
+    color:white;
+     margin-left:5px;
+}
+.max-price input{
+   
+    color:white;
+    margin-left:8px;
+}
+.section{
+    border-radius:5px;
+    padding:1px;
+}
+.filter-icon{
+    margin-left:17px;
+}
+/* cars*/
+
+
+.car-container {
+    position:relative;
+    margin-top:500px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 2fr));
+    gap: 25px;
+    padding: 30px;
+    
+}
+
+.car-card {
+    background: #101a2c;
+    border-radius: 12px;
+    padding: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+  
+    border:1px solid blue;
+}
+
+.car-card img {
+    width: 80%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.car-info {
+    margin-top: 10px;
+}
+
+.car-info h3 {
+    color: white;
+    margin-bottom: 2px;
+}
+
+.car-info p {
+    color: #9bb0d1;
+    font-size: 14px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: #9bb0d1;
+    font-size: 14px;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 10px;
+    background: #2d6cf7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background: #1a54d9;
+}
+
+.price {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #2d6cf7;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+#tesla img {
+  height:200px;
+  width:100%;
+}
+.journey-section{
+    transition:.5s;
+}
+.journey-section:hover{
+       transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(177, 57, 57, 0.3);
+
+    transform: scale(1.05); 
+}

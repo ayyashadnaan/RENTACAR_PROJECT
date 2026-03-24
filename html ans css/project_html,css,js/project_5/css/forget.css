@@ -1,0 +1,29 @@
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;        /* আপনার প্রয়োজনমত height দিন */
+    width: 100%;          /* অথবা নির্দিষ্ট width, যদি না থাকে */
+   background-color:#232E42;
+
+}
+.email-input-container input{
+    display:block;
+    margin-bottom:10px;
+    border-radius:15px;
+    width:300px;
+    padding:10px;
+}
+.btn{
+    width:320px;
+    border-radius:15px;
+    padding:10px;
+    background-color:blue;
+    color:white;
+     opacity:1;
+}
+.blogin{
+    display:block;
+    color:white;
+}
