@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+     box-sizing: border-box;
+    
+}
+body{
+    background-color:#232E42;
+}
+.container p{
+    color:white;
+}
+.login-hero img{
+     height:700.80px;
+     width:715px;
+     opacity:1;
+}
+.login-hero{
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.login-hero p:first-of-type {
+     position: absolute;
+    bottom: 100px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0; 
+}
+.login-hero p:last-of-type {
+     position: absolute;
+    bottom: 80px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0; 
+}
+.login-hero h4{
+ position:absolute;
+ bottom:45px;
+ color:white;
+ opacity:.7;
+ left:10px;
+}
+.container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    left:700px;
+    position:absolute;
+    bottom:250px;
+}
+.container input{
+    border-radius:10px;
+    padding:10px;
+    width:300px;
+}
+.sign-up-button{
+    width:300px;
+    padding:10px;
+    border-radius:10px;
+    background-color:#1E90FF;
+    color:white;
+    opacity:.7;
+}
+.forget-password{
+    left:110px;
+    position:relative;
+    font-size:12px;
+}
+.google-btn{
+    border-radius:15px;
+    padding:5px;
+    width:300px;
+     display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.google-btn img{
+    width:20px;
+    height:20px;
+   
+}
+a{
+    text-decoration:none;
+}
+
