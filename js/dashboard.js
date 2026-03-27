@@ -9,3 +9,5 @@ redirectButton.addEventListener("click",()=>{
 document.querySelector(".logout-div").addEventListener("click", () => {
     window.location.href = "../html/index.html";
 });
+
+

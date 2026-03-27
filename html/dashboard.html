@@ -17,12 +17,14 @@
             <img src="../images/car-pic.png" alt="Car Logo">
             <span class="brand-name">RentACar</span>
             <a href="history.html" class="history-link">
-              History
+                History
                 <i class="fa-solid fa-clock-rotate-left" id="history-icon"></i>
             </a>
-            <div class="logout-div">
-            <label>Logout</label>
-            <i class="fa-solid fa-right-from-bracket logout-icon " id="logout" ></i>
+
+            <!-- logout-div replace koro ei code diye -->
+            <div class="logout-div" onclick="window.location.href='../html/index.html'">
+                <label>Logout</label>
+                <i class="fa-solid fa-right-from-bracket logout-icon" id="logout"></i>
             </div>
         </div>
     </header>
@@ -101,7 +103,7 @@
         <div class="filer-icon">
             <i class="fa-solid fa-filter type-icon"></i>
             <label>Type:</label>
-            <select class="section">
+            <select class="section" id="typeFilter">
                 <option class="input">All Typs</option>
                 <option class="input">Sedan</option>
                 <option class="input">SUV</option>
@@ -127,7 +129,7 @@
         <div class="max-price">
             <i class="fa-solid fa-dollar-sign price-icon"></i>
             <label>Max-price:</label>
-            <input type="range" min="0" max="500" value="500" >
+            <input type="range" min="0" max="500" value="500">
             <span>$500</span>
         </div>
 
@@ -144,66 +146,66 @@
     </div>
 
     <!---->
-   <div class="car-container">
-    <div class="car-card">
-        <img src="../images/hundai-i10.png" alt="">
-        <div class="car-info">
-            <h3>Hyundai i10</h3>
-            <p>Hatchback</p>
-            <div class="details">
-               
-                <span><i class="fa-solid fa-car-side"></i>4 Seats</span>
-                <span><i class="fa-solid fa-gear"></i>Manual</span>
+    <div class="car-container">
+        <div class="car-card">
+            <img src="../images/hundai-i10.png" alt="">
+            <div class="car-info">
+                <h3>Hyundai i10</h3>
+                <p>Hatchback</p>
+                <div class="details">
+
+                    <span><i class="fa-solid fa-car-side"></i>4 Seats</span>
+                    <span><i class="fa-solid fa-gear"></i>Manual</span>
+                </div>
+                <button class="book-btn">Book Now</button>
             </div>
-            <button class="book-btn">Book Now</button>
+            <div class="price">$35/day</div>
         </div>
-        <div class="price">$35/day</div>
+
+        <div class="car-card">
+            <img src="../images/toyota.png" alt="">
+            <div class="car-info">
+                <h3>Toyota Corolla</h3>
+                <p>Sedan</p>
+                <div class="details">
+                    <span><i class="fa-solid fa-car-side"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gear"></i>Manual</span>
+                </div>
+                <button class="book-btn">Book Now</button>
+            </div>
+            <div class="price">$45/day</div>
+        </div>
+
+        <div class="car-card">
+            <img src="../images/honda-civic.png" alt="">
+            <div class="car-info">
+                <h3>Honda Civic</h3>
+                <p>Sedan</p>
+                <div class="details">
+                    <span><i class="fa-solid fa-car-side"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gauge"></i>Automatic</span>
+                </div>
+                <button class="book-btn">Book Now</button>
+            </div>
+            <div class="price">$55/day</div>
+        </div>
+        <div class="car-card" id="tesla">
+            <img src="../images/tesla.png" alt="">
+            <div class="car-info">
+                <h3>Honda Civic</h3>
+                <p>Sedan</p>
+                <div class="details">
+                    <span><i class="fa-solid fa-car-side"></i>5 Seats</span>
+                    <span><i class="fa-solid fa-gauge"></i>Automatic</span>
+                </div>
+                <button class="book-btn">Book Now</button>
+            </div>
+            <div class="price">$55/day</div>
+        </div>
+        <!-- যতো দরকার ততো card copy করতে পারবে -->
+    </div>
     </div>
 
-    <div class="car-card">
-        <img src="../images/toyota.png" alt="">
-        <div class="car-info">
-            <h3>Toyota Corolla</h3>
-            <p>Sedan</p>
-            <div class="details">
-                <span><i class="fa-solid fa-car-side"></i>5 Seats</span>
-                <span><i class="fa-solid fa-gear"></i>Manual</span>
-            </div>
-            <button class="book-btn">Book Now</button>
-        </div>
-        <div class="price">$45/day</div>
-    </div>
-
-    <div class="car-card">
-        <img src="../images/honda-civic.png" alt="">
-        <div class="car-info">
-            <h3>Honda Civic</h3>
-            <p>Sedan</p>
-            <div class="details">
-                <span><i class="fa-solid fa-car-side"></i>5 Seats</span>
-                <span><i class="fa-solid fa-gauge"></i>Automatic</span>
-            </div>
-            <button class="book-btn">Book Now</button>
-        </div>
-        <div class="price">$55/day</div>
-    </div>
-<div class="car-card" id="tesla">
-        <img src="../images/tesla.png" alt="">
-        <div class="car-info">
-            <h3>Honda Civic</h3>
-            <p>Sedan</p>
-            <div class="details">
-                <span><i class="fa-solid fa-car-side"></i>5 Seats</span>
-                <span><i class="fa-solid fa-gauge"></i>Automatic</span>
-            </div>
-            <button class="book-btn">Book Now</button>
-        </div>
-        <div class="price">$55/day</div>
-    </div>
-    <!-- যতো দরকার ততো card copy করতে পারবে -->
-</div>
-    </div>
- 
     <script src="../js/dashboard.js"></script>
 </body>
 
